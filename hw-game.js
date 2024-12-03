@@ -8,7 +8,6 @@ function getRandomInt(min, max) {
   }
 
   let randNum = getRandomInt(1, 100);
-  console.log(randNum);
 
   function Fun(){
     for(let i = 0; i < 10; i++) {
@@ -41,9 +40,7 @@ function getRandomInt(min, max) {
   
     let randNum1 = getRandomInt(1, 100);
     let randNum2 = getRandomInt(1, 100);
-    console.log(randNum1);
-    console.log(randNum2);
-    // Получаем случайный ключ массива
+    
     let rand = Math.floor(Math.random() * math.length);
     console.log(math[rand]); 
     
@@ -62,8 +59,6 @@ function getRandomInt(min, max) {
      else {
       alert('Обнови страницу')
     }
-    
-    console.log(task);
     
     let i = 0
     while (true) {
@@ -157,11 +152,8 @@ let gameQuiz = () => {
         }
         i++
     }
-    console.log(userAnswerQuiz);
     
     let quizResult = userAnswerQuiz.reduce((total, number) => total + number, 0);
-    
-    console.log(quizResult);
     
     if (quizResult === 3) {
         alert('Молодец ты ответил на все правильно')
@@ -178,7 +170,6 @@ function gameRPS() {
     let arr = ['камень', 'ножницы', 'бумага']
     
     let rand = Math.floor(Math.random() * arr.length);
-    console.log(arr[rand]);  
     
     let oper = arr[rand];
     
@@ -211,7 +202,6 @@ function gameRPS() {
 btnBgColor = document.querySelector('#randomColorsBtn');
 bodyBgcolor = document.querySelector('.mini-games');
 
-console.log(btnBgColor)
 
 let randColor = () =>{
 let rand = Math.floor((Math.random() * 1000000) + 1);
@@ -226,6 +216,5 @@ bodyBgcolor.style.backgroundColor = color;
 btnBgColor.addEventListener('click', function() {
 randColor()
 let color1 = (`#${randColor()}`)
-console.log(color1)
 changeBackground(color1)
 });
